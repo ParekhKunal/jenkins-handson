@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
+    "build":"docker build -t jenkins:latest .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
