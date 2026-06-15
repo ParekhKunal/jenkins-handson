@@ -4,10 +4,10 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+# RUN npm install
 
-COPY . .
+COPY dist ./dist
 
 EXPOSE 3000
 
-CMD ["node", "src/index.js"]
+CMD ["node", "dist/app.js"]
